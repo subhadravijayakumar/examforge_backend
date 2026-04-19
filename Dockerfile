@@ -9,4 +9,4 @@ RUN ./mvnw clean package -DskipTests
 
 EXPOSE 8080
 
-ENTRYPOINT ["java", "-jar", "-Dspring.profiles.active=prod", "target/*.jar"]
+CMD ["java", "-jar", "-Dspring.profiles.active=prod", "target/examforge-0.0.1-SNAPSHOT.jar"]
